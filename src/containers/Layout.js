@@ -49,8 +49,6 @@ export default function Layout({ children }) {
     <meta name="msapplication-TileColor" content="#ffffff"/>
     <meta name="msapplication-TileImage" content="/ms-application.png"/>
     <meta name="twitter:image" content="/android-512X512.png" />
-    <meta name="og:type" content="website" />
-    <meta name="og:site_name" content="Space AI" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="twitter:domain" content="" />
     <meta itemProp="image" content="/cover-pic.png" />
@@ -75,7 +73,7 @@ export default function Layout({ children }) {
           <div className="drawer-side ">
               <label htmlFor="my-drawer-3" className="drawer-overlay"></label> 
               <ul className="menu p-4 w-80 h-full bg-base-100">
-                <li className="mr-2"><Link href="/">Home</Link></li>
+                <li className="mr-2"><Link href="/">Anasayfa</Link></li>
                   <Navlinks />
                   <div className="mt-12"></div>
                   <NavProfileLinks />
