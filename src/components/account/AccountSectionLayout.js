@@ -15,10 +15,9 @@ const AccountSectionLayout = ({children}) => {
             <div className="flex flex-wrap gap-8">
                 <div className="flex-none w-64 card bg-slate-200 shadow-xl">
                     <div className="card-body ">
-                        <h3 className="font-medium text-xl">Hello, {name}</h3>
+                        <h3 className="font-medium text-xl">Merhabalar, {name}</h3>
                         <ul className="menu w-full mt-2 rounded-box">
-                        <li className="mt-2"><Link href="/account/my-profile" className={router.pathname.includes("my-profile") ? "active" : ""}>My Profile</Link></li>
-                        <li className="mt-2"><Link href="/account/saved-websites" className={router.pathname.includes("saved-websites") ? "active" : ""}>Saved Websites</Link></li>
+                        <li className="mt-2"><Link href="/account/my-profile" className={router.pathname.includes("my-profile") ? "active" : ""}>Profilim</Link></li>
                         </ul>
                     </div>
                 </div>

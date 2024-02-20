@@ -1,19 +1,47 @@
-import PageMetaTags from "@/containers/PageMetaTags"
+import React, { useState } from 'react';
 
-function Design() {
-      return(<>
-            <PageMetaTags title="Start Designing" description={"Meta description here"} url="/start-designing"/>
-            <div className="grid place-items-center w-full bg-slate-100 pt-6 pb-48">
-            <div className="max-w-6xl w-full  md:px-12 px-4 text-left flex-col ">
-                <h1 className="text-2xl  leading-10 font-bold">Start Designing</h1>
-                <p className="my-24 text-xl">
-                    Main functinality of  website here
-                </p>
-            </div>
-        </div>
-        </>
-      )
+const SuggestionsComponent = () => {
+  const [selectedDays, setSelectedDays] = useState(1);
 
-}
+  const handleDaysChange = (e) => {
+    setSelectedDays(parseInt(e.target.value));
+  };
 
-export default Design
+  const getDestinationSuggestion = () => {
+    if (selectedDays === 1) {
+      return 'Merkeze git';
+    } else if (selectedDays === 2) {
+      return 'Osmangazi\'ye git';
+    } else if (selectedDays === 3) {
+      return 'Cumalıkızık\'a git';
+    } else {
+      return 'Başka bir yere git';
+    }
+  };
+
+  return (
+    <div className="container mx-auto mt-8">
+      <label className="block text-gray-700 text-lg mb-2">
+        Tarih Aralığı Seçin:
+      </label>
+      <select
+        className="p-2 border border-gray-300 rounded"
+        onChange={handleDaysChange}
+        value={selectedDays}
+      >
+        <option value={1}>1 gün</option>
+        <option value={2}>2 gün</option>
+        <option value={3}>3 gün</option>
+        <option value={4}>4 gün ve fazla</option>
+      </select>
+
+      <div className="mt-4">
+        <p className="text-lg mt-2">
+          Öneri: {getDestinationSuggestion()}
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default SuggestionsComponent;

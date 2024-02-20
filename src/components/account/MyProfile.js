@@ -24,7 +24,7 @@ const MyProfile = () => {
 
     return(
        <>
-            <h2 className="text-xl font-bold text-center">My Profile</h2>
+            <h2 className="text-xl font-bold text-center">Profilim</h2>
             {!userData.name && <div className="mt-12 text-center"><span className="loading"></span></div>}
             {userData.name && <div className="overflow-x-auto">
   <table className="table table-zebra">
@@ -34,22 +34,19 @@ const MyProfile = () => {
       </tr>
       {/* row 2 */}
       <tr>
-        <td>Name</td>
-        <td className="font-medium">{userData.name}</td>
+        <td>İsim</td>
+        <td className="font-medium">Özge</td>
+        
+      </tr>
+      <tr>
+        <td>Soyisim</td>
+        <td className="font-medium">YILMAZ</td>
         
       </tr>
       {/* row 3 */}
       <tr>
-        <td>Registered Mail</td>
-        <td className="font-medium">{userData.emailId}</td>
-      </tr>
-      <tr>
-        <td>Credits</td>
-        <td className="font-medium">{userData.credits}</td>
-      </tr>
-      <tr>
-        <td>Subscription</td>
-        <td className="font-medium">{userData.plan} Plan {userData.plan == "FREE" && <Link href="/pricing"><button className="btn normal-case ml-2 btn-primary btn-xs ">Subscribe Now</button></Link> }</td>
+        <td>Mail Adresi</td>
+        <td className="font-medium">ozgeyilmaz@gmail.com</td>
       </tr>
     </tbody>
   </table>

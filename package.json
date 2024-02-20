@@ -1,6 +1,6 @@
 {
-  "name": "tailwind_landing_page",
-  "description": "Landing page using next js, tailwind css and daisy UI. Template uses rich tailwind css utility classes and have components of daisy UI.",
+  "name": "tailwind_landing_bursa_page",
+  "description": "",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,32 +9,20 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/srobbin01/daisyui-nextjs-landing-page"
-  },
-  "keywords": [
-    "reactjs",
-    "tailwind-css",
-    "landing-page",
-    "daisyui-template",
-    "landing=page-template",
-    "nextjs"
-  ],
-  "author": "srobbin01",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/srobbin01/daisyui-nextjs-landing-page/issues"
-  },
   "dependencies": {
     "@heroicons/react": "^2.0.15",
+    "@material-tailwind/react": "^2.1.9",
     "@next/font": "13.1.6",
+    "@nextui-org/react": "^2.2.9",
     "@reduxjs/toolkit": "^1.9.7",
     "@tailwindcss/typography": "^0.5.9",
     "axios": "^1.6.2",
     "crisp-sdk-web": "^1.0.21",
     "eslint": "8.34.0",
     "eslint-config-next": "13.1.6",
+    "flowbite": "^2.3.0",
+    "flowbite-react": "^0.7.2",
+    "framer-motion": "^11.0.5",
     "mixpanel-browser": "^2.48.1",
     "next": "^14.0.3",
     "nextjs-google-analytics": "^2.3.3",
